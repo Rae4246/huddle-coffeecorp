@@ -165,3 +165,24 @@ body {
 		.col {  margin: 1% 0 1% 0%; }
 		.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
 	}
+.button {
+            background: rgb(160,190,186);
+            background-image: linear-gradient(to bottom, rgb(160,190,186), rgb(82,136,129));
+            border-radius: 12px;
+            box-shadow: 2px 2px 4px rgb(45,75,71);
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+			border: 0;
+         }
+.button:hover {
+           background: rgb(192,211,209);
+           background-image: linear-gradient(to bottom, rgb(192,211,209), rgb(160,190,186));
+           text-decoration: none;
+         }
+		 
+		 .button:focus {
+			outline:0;
+		}
