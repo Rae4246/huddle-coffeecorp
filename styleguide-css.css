@@ -170,9 +170,10 @@ body {
             background-image: linear-gradient(to bottom, rgb(160,190,186), rgb(82,136,129));
             border-radius: 12px;
             box-shadow: 2px 2px 4px rgb(45,75,71);
-            font-family: Arial;
-            color: #ffffff;
-            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+			font-size: 15pt;
+			font-weight: 300;
+			font-style: italic;
             padding: 10px 20px 10px 20px;
             text-decoration: none;
 			border: 0;

@@ -3,47 +3,42 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styleguide-css.css">
       <title>UI Elements</title>
       <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="styles.css">
 
-      <style>
-         .button {
-            background: rgb(160,190,186);
-            background-image: linear-gradient(to bottom, rgb(160,190,186), rgb(82,136,129));
-            border-radius: 12px;
-            box-shadow: 2px 2px 4px rgb(45,75,71);
-            font-family: Arial;
-            color: #ffffff;
-            font-size: 20px;
-            padding: 10px 20px 10px 20px;
-            text-decoration: none;
-			border: 0;
-         }
-
-         .button:hover {
-           background: rgb(192,211,209);
-           background-image: linear-gradient(to bottom, rgb(192,211,209), rgb(160,190,186));
-           text-decoration: none;
-         }
-		 
-		 .button:focus {
-			outline:0;
-		}
-         
-      </style>
-
    </head>
    
    <body>
+   <div class="topnav span_6_of_6">
+		  <ul>
+			<li><a href="#">Caffiene Corp.</a></li>
+			<li><a href="styleguide-index.html">Style Guide</a></li>
+			<li><a class="active" href="UI_elements_Caleb.html">UI Components</a></li>
+
+		  </ul>
+	</div>
+	<div class="left span_1_of_6">
+		<ul class="nav">
+			<li><h5><a>Table of Contents</a></h5></li>
+			<li><a>Purpose</a></li>
+			<li><a>Grid Layout</a></li>
+			<li><a>Color Palette</a></li>
+			<li><a>Typography</a></li>
+		</ul>
+	</div>
+    <div class="content span_4_of_6">
       <h1> buttons </h1>
       
-      <button class="button">
-         Order your coffee now!
-      </button>
+          <button class="button span_1_of_6">
+             Order your coffee now!
+          </button>
       
-      <div class="button">
-         <p> Get a better coffee now!! </p>
+          <div class="button span_1_of_6">
+             <p> Get a better coffee now!! </p>
+          </div>
       </div>
 	</body>				 
 </html>
