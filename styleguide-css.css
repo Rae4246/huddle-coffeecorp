@@ -66,7 +66,7 @@ body {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		background-color: #f1f1f1;
+		background-color: #85624b;
 	}
 	.left li a {
 		display: block;
@@ -85,7 +85,7 @@ body {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color: #333;
+		background-color: #85624b;
 	}
 	.topnav li {
 		float: left;
@@ -99,12 +99,13 @@ body {
 		text-decoration: none;
 	}
 	.topnav li a:hover {
-		background-color: #111;
+		background-color: #528881;
 	}
 	.content {
 		float: left;
 		display: inline;
 		padding-left: 1%;
+		padding-right: 1%;
 	}
 
 
@@ -122,8 +123,9 @@ body {
 		display: block;
 		float:left;
 		margin: 1% 0 1% 1%;
-		background: #A0A0A0;
+		background: #85624b;
 		text-align: center;
+		color: #FFFFFF;
 	}
 	.col:first-child { margin-left: 0; }
 
