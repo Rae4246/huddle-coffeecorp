@@ -191,7 +191,7 @@ body {
 }
 
 .code {
-	border: 
+	border: 1px;
 }
       
 /*table styles*/
@@ -209,3 +209,26 @@ tr:hover{
    background-color: rgb(192,211,209);
 }
 
+.forms{
+	border: 1px solid #93A537;
+	width: 50%;
+	padding: 10px;
+}
+
+.img2{
+    border: 1px solid #93A537;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.images img {width: 100%}
+.images {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+    text-align: center;
+    padding: 10px 20px;
+}
