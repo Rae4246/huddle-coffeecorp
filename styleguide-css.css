@@ -81,6 +81,12 @@ body {
 	.indent {
 		margin-left: 2em;
 	}
+	.left li a:hover {
+		background-color: #528881;
+	}
+	.nav {
+		position: fixed;
+	}
 
 /* top navigation */
 	.topnav ul {
