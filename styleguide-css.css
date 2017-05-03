@@ -81,6 +81,12 @@ body {
 	.indent {
 		margin-left: 2em;
 	}
+	.left li a:hover {
+		background-color: #528881;
+	}
+	.nav {
+		position: fixed;
+	}
 
 /* top navigation */
 	.topnav ul {
@@ -170,7 +176,7 @@ body {
 	}
 .button {
 	background: rgb(160,190,186);
-	background-image: linear-gradient(to bottom, #a0beba, #528881);
+	background-image: linear-gradient(to bottom, rgb(160,190,186), rgb(82,136,129));
 	border-radius: 12px;
 	box-shadow: 2px 2px 4px rgb(45,75,71);
 	font-family: 'Quicksand', sans-serif;
@@ -183,7 +189,7 @@ body {
 }
 .button:hover {
 	background: rgb(192,211,209);
-	background-image: linear-gradient(to bottom, #c0d3d1, #a0beba);
+	background-image: linear-gradient(to bottom, rgb(192,211,209), rgb(160,190,186));
 	text-decoration: none;
 }		 
 .button:focus {
@@ -191,9 +197,7 @@ body {
 }
 
 .code {
-	border: 2px solid black;
-   padding: 1em;
-   margin-top: 1em;
+	border: 1px;
 }
       
 /*table styles*/
@@ -208,7 +212,7 @@ th, td {
     border-bottom: 1px solid #4d201d;
 }
 tr:hover{
-   background-color: #c0d3d1;
+   background-color: rgb(192,211,209);
 }
 
 .forms{
