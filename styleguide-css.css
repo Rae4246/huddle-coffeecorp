@@ -81,12 +81,6 @@ body {
 	.indent {
 		margin-left: 2em;
 	}
-	.left li a:hover {
-		background-color: #528881;
-	}
-	.nav {
-		position: fixed;
-	}
 
 /* top navigation */
 	.topnav ul {
@@ -176,7 +170,7 @@ body {
 	}
 .button {
 	background: rgb(160,190,186);
-	background-image: linear-gradient(to bottom, rgb(160,190,186), rgb(82,136,129));
+	background-image: linear-gradient(to bottom, #a0beba, #528881);
 	border-radius: 12px;
 	box-shadow: 2px 2px 4px rgb(45,75,71);
 	font-family: 'Quicksand', sans-serif;
@@ -186,18 +180,22 @@ body {
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
 	border: 0;
+	color: white;
 }
 .button:hover {
 	background: rgb(192,211,209);
-	background-image: linear-gradient(to bottom, rgb(192,211,209), rgb(160,190,186));
+	background-image: linear-gradient(to bottom, #c0d3d1, #a0beba);
 	text-decoration: none;
+	color: black;
 }		 
 .button:focus {
 	outline:0;
 }
 
 .code {
-	border: 1px;
+	border: 2px solid black;
+   display: block;
+   margin: 1em;
 }
       
 /*table styles*/
@@ -209,10 +207,10 @@ table {
 th, td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #4d201d;
+    border-bottom: 1px solid #885259;
 }
 tr:hover{
-   background-color: rgb(192,211,209);
+   background-color: #c0d3d1;
 }
 
 .forms{
