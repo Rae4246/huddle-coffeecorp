@@ -101,10 +101,6 @@
 						<p>Latte</p>
 					</div>
 				</div><br>
-		
-				<div class="thumbnail span_1_of_6">
-					<img class="img2" src="coffee-983955_640.jpg" alt="coffee">
-				</div>
 				
 				<p>*explain the images here*</p>
 			</div>
@@ -253,50 +249,104 @@
          
          <div class="grouping">
             <a name="FormElements"><h1>Form Elements</h1></a>
-            <p>*explain the form elements here*</p>
-            
+
             <div class="formBox grouping indent span_2_of_6">
 				  <form>
-					<label>First Name</label>
+					<label>Name</label>
 					<input type="text" placeholder="Your name..">
 
-					<label>Last Name</label>
-					<input type="text" placeholder="Your last name..">
-
-					<label>Country</label>
+					<label>Item</label>
 					<select>
-					  <option value="australia">Australia</option>
-					  <option value="canada">Canada</option>
-					  <option value="usa">USA</option>
+					  <option value="australia">Coffee</option>
+					  <option value="canada">Special Brews</option>
+					  <option value="usa">Bakery Items</option>
 					</select>
 					
-					<input type="checkbox" value="">Check <br>
+					<input type="checkbox" value="">Cold <br>
 					<input type="radio" name="size" value="small">Small<br>
 					<input type="radio" name="size" value="medium">Medium<br>
 					<input type="radio" name="size" value="large">Large<br>
-					<input type="submit" value="Submit">
+                    
+					<label>Comments or Concerns</label>
+					<input type="text" placeholder="My experience was...."><br>
+                    
+                    <input type="submit" value="Submit">
 				  </form>
 			</div>
-            <div class="indent">
+            <div class="indent2">
 				<a name="TextInputArea"><h4>Text input and text area</h4></a>
-				<p>*explain the form elements here*</p>
+                    <p> This area is just a simple box with rounded edges using our outline #885259 color and emphasis Teal for the text.</p>
+                    <div class="grouping span_2_of_6">
+                        <p>HTML</p>
+                        <code class="code1">
+                            &lt;label&gt;Name&lt;/label&gt;
+                            &lt;input&nbsp;type=&quot;text&quot;&nbsp;placeholder=&quot;Your&nbsp;name..&quot;&gt;
+                        </code>
+                   </div>
+                   <div class="grouping span_2_of_6">
+                        <p>CSS</p>
+                        <code class="code2">
+                            input[type=text],&nbsp;select&nbsp;{ <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;12px&nbsp;20px; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;8px&nbsp;0; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;inline-block; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;border:&nbsp;1px&nbsp;solid&nbsp;#885259; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;4px; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;box-sizing:&nbsp;border-box; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#528881; <br>
+                            } <br>
+                        </code>
+                   </div>
 
 				<a name="Checkbox"><h4>Checkbox</h4></a>
-				<p>*explain the form elements here*</p>
-
-				<a name="RadioButton"><h4>Radio button</h4></a>
-				<p>*explain the form elements here*</p>
-
+                    <p> This is just a plain checkbox with plain white text to keep style consistency with the other labels.</p>
+                    <div class="grouping span_2_of_6">
+                            <p>HTML</p>
+                            <code class="code1">
+                               &lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;value=&quot;&quot;&gt;Cold&nbsp;<br>
+                            </code>
+                    </div>
+                <a name="RadioButton"><h4>Radio button</h4></a>
+                    <p> These are just plain radio buttons with plain white text to keep style consistency with the other labels.</p>
+                    <div class="grouping span_3_of_6">
+                            <p>HTML</p>
+                            <code class="code1">
+                                &lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;size&quot;&nbsp;value=&quot;small&quot;&gt;Small <br>
+                                &lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;size&quot;&nbsp;value=&quot;medium&quot;&gt;Medium <br>
+                                &lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;size&quot;&nbsp;value=&quot;large&quot;&gt;Large <br>
+                            </code>
+                    </div>
 				<a name="DropDown"><h4>Drop-down menu</h4></a>
-				<p>*explain the form elements here*</p>
-				
+                    <p> This dropdown is just a simple box with rounded edges using our outline #885259 color and emphasis Teal for the text options.</p>
+                    <div class="grouping span_2_of_6">
+                            <p>HTML</p>
+                            <code class="code1">
+                                &lt;label&gt;Item&lt;/label&gt; <br>
+                                &lt;select&gt; <br>
+                                &nbsp;&nbsp;&lt;option&nbsp;value=&quot;australia&quot;&gt;Coffee&lt;/option&gt; <br>
+                                &nbsp;&nbsp;&lt;option&nbsp;value=&quot;canada&quot;&gt;Special&nbsp;Brews&lt;/option&gt; <br>
+                                &nbsp;&nbsp;&lt;option&nbsp;value=&quot;usa&quot;&gt;Bakery&nbsp;Items&lt;/option&gt; <br>
+                                &lt;/select&gt; <br>
+                            </code>
+                       </div>
+                       <div class="grouping span_2_of_6">
+                            <p>CSS</p>
+                            <code class="code2">
+                                input[type=text],&nbsp;select&nbsp;{ <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;12px&nbsp;20px; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;8px&nbsp;0; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;inline-block; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;border:&nbsp;1px&nbsp;solid&nbsp;#885259; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;4px; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;box-sizing:&nbsp;border-box; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#528881; <br>
+                                } <br>
+                            </code>
+                       </div>
+                   </div>
 			 </div>
-		  </div>
-         
-         <div class="grouping">
-            <a name="BadgeLabel"><h1>Badge/Label</h1></a>
-            <p>*explain the badges and labels here*</p>
-         </div>
          
          <div class="grouping">
             <a name="NotificationsAlerts"><h1>Notifications/Alerts</h1></a>
