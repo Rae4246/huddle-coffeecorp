@@ -97,7 +97,10 @@ body {
 		float: left;
 	}
 	.indent {
-		margin-left: 2em;
+		margin-left: 4%;
+	}
+	.indent2 {
+		margin-left: 8%;
 	}
 	.left li a:hover {
 		background-color: #528881;
@@ -247,6 +250,7 @@ body {
 .button:hover {
 	background: rgb(192,211,209);
 	background-image: linear-gradient(to bottom, #c0d3d1, #a0beba);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-decoration: none;
 	color: black;
 }		 
@@ -319,7 +323,6 @@ tr:hover{
     text-align: center;
     padding: 10px 20px;
 }
-
 
 
 
