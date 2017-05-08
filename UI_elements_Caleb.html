@@ -1,118 +1,200 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="styleguide-css.css">
-      <title>UI Elements</title>
-      <meta name="viewport" content="width=device-width">
-      <link rel="stylesheet" href="styles.css">
-   </head>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styleguide-css.css">
+		<title>UI Elements</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="styles.css">
+	</head>
    
-   <body>
-      <div class="topnav span_6_of_6">
-           <ul>
-            <li><a href="#">Caffiene Corp.</a></li>
-            <li><a href="styleguide-index.html">Style Guide</a></li>
-            <li><a class="active" href="UI_elements_Caleb.html">UI Components</a></li>
-
+	<body>
+		<div class="topnav span_6_of_6">
+			<ul>
+				<li><a href="#">Caffiene Corp.</a></li>
+				<li><a href="styleguide-index.html">Style Guide</a></li>
+				<li><a class="active" href="UI_elements_Caleb.html">UI Components</a></li>
            </ul>
-      </div>
+		</div>
       
-      <div class="left span_1_of_6">
-         <ul class="nav">
-            <li><h5><a>Table of Contents</a></h5></li>
-            <li><a href="#Buttons">Buttons</a></li>
-            <li><a href="#Image">Image</a></li>
-            <li><a href="#List">List</a></li>
-            <li><a href="#Table">Table</a></li>
-            <li><a href="#NavigationMenu">Navigation Menu</a></li>
-            <li><a href="#Breadcrumb">Breadcrumb Navigation</a></li>
-            <li><a href="#FormElements">Form Elements</a></li>
-            <li class="indent"><a href="#TextInputArea">Text input and Text area</a></li>
-            <li class="indent"><a href="#Checkbox">Checkbox</a></li>
-            <li class="indent"><a href="#RadioButton">Radio button</a></li>
-            <li class="indent"><a href="#DropDown">Drop-down menu</a></li>
-            <li><a href="#NotificationsAlerts">Notifications/Alerts</a></li>
-         </ul>
-      </div>
+		<div class="left span_1_of_6">
+			<ul class="nav">
+				<li><h5><a>Table of Contents</a></h5></li>
+				<li><a href="#Buttons">Buttons</a></li>
+				<li><a href="#Image">Image</a></li>
+				<li><a href="#List">List</a></li>
+				<li><a href="#Table">Table</a></li>
+				<li><a href="#NavigationMenu">Navigation Menu</a></li>
+				<li><a href="#Breadcrumb">Breadcrumb Navigation</a></li>
+				<li><a href="#FormElements">Form Elements</a></li>
+				<li class="indent"><a href="#TextInputArea">Text input and Text area</a></li>
+				<li class="indent"><a href="#Checkbox">Checkbox</a></li>
+				<li class="indent"><a href="#RadioButton">Radio button</a></li>
+				<li class="indent"><a href="#DropDown">Drop-down menu</a></li>
+				<li><a href="#BadgeLabel">Badge/Label</a></li>
+				<li><a href="#NotificationsAlerts">Notifications/Alerts</a></li>
+			</ul>
+		</div>
       
-      <div class="content span_4_of_6">
-        
-        <div>
-    		<p></p>
-    	</div>
-         <div class="grouping"><a name="Buttons"><h1> Buttons </h1></a>
-         <p>The buttons structure is using the html 5 button tag. We wanted the buttons to stand out from the rest of the content on the page so for the css we used the teal color as a contrast to the other colors. There is a graidient style to the button to make it look a little nicer which uses different values and shade of the original color. spacificaly #a0beba and #528881. Another lighter graidient is used when the user hovers over the button to help indicate that they can interact with this element. #c0d3d1 and #a0beba. </p>
+		<div class="content span_4_of_6">
+			<div class="grouping">
+				<a name="Buttons"><h1> Buttons </h1></a>
+				<p>The buttons structure is using the html 5 button tag. We wanted the buttons to stand out from the rest of the content on the page so for the css we used the teal color as a contrast to the other colors. There is a graidient style to the button to make it look a little nicer which uses different values and shade of the original color. spacificaly #a0beba and #528881. Another lighter graidient is used when the user hovers over the button to help indicate that they can interact with this element. #c0d3d1 and #a0beba. </p>
          
-         <button class="button span_1_of_6">
-             Order your coffee now!
-         </button>
-         <br>
-           <h6> HTML </h6>
-           <div class="grouping span_2_of_6">
-            	
-            	<div class="code1">
-			
-              &lt;button class=&quot;button span_1_of_6&quot;&gt;<br>
-               &nbsp;&nbsp;&nbsp;This is a button!<br>
-               &lt;/button&gt;<br> 
-            </div>
-			 </div>
-			
-            <h6> CSS </h6>
-            <div class="grouping span_2_of_6">
-            <div class="code2"> 
-				
-               .button {<br>
-                  background: rgb(160,190,186);<br>
-                  background-image: linear-gradient(to bottom, #a0beba, #528881);<br>
-                  border-radius: 12px;<br>
-                  box-shadow: 2px 2px 4px rgb(45,75,71);<br>
-                  font-family: 'Quicksand', sans-serif;<br>
-                  font-size: 15pt;<br>
-                  font-weight: 300;<br>
-                  font-style: italic;<br>
-                  padding: 10px 20px 10px 20px;<br>
-                  text-decoration: none;<br>
-                  border: 0;<br>
-                  color: white;<br>
-               }<br>
-               .button:hover {<br>
-                  background: rgb(192,211,209);<br>
-                  background-image: linear-gradient(to bottom, #c0d3d1, #a0beba);<br>
-                  text-decoration: none;<br>
-                  color: black;<br>
-               }		 <br>
-               .button:focus {<br>
-                  outline:0;<br>
-               }  <br>
-          </div>
-			 </div>
-           <br>
-            
-            <button class="button">
-               This is a button!
-            </button>
-			
-         
-		  </div>
-         <div class="grouping">
-            <a name="Image"><h1>Image</h1></a>
-            <div class="images span_2_of_6">
-				<img src="coffee-983955_640.jpg" alt="coffee"><br>
-				<div class="container">
-					<p>Latte</p>
+				<button class="button span_1_of_6">
+					Order your coffee now!
+				</button>
+		 
+				<button class="button">
+					This is a button!
+				</button><br>
+           
+				<div class="grouping span_2_of_6">
+					<p>HTML</p>
+					<div class="code1">
+						&lt;button class=&quot;button span_1_of_6&quot;&gt;<br>
+						&nbsp;&nbsp;&nbsp;This is a button!<br>
+						&lt;/button&gt;<br> 
+					</div>
 				</div>
+			
+				<div class="grouping span_2_of_6">
+					<p>CSS</p>
+					<div class="code2">			
+						.button {<br>
+							background: rgb(160,190,186);<br>
+							background-image: linear-gradient(to bottom, #a0beba, #528881);<br>
+							border-radius: 12px;<br>
+							box-shadow: 2px 2px 4px rgb(45,75,71);<br>
+							font-family: 'Quicksand', sans-serif;<br>
+							font-size: 15pt;<br>
+							font-weight: 300;<br>
+							font-style: italic;<br>
+							padding: 10px 20px 10px 20px;<br>
+							text-decoration: none;<br>
+							border: 0;<br>
+							color: white;<br>
+						}<br>
+						
+						.button:hover {<br>
+							background: rgb(192,211,209);<br>
+							background-image: linear-gradient(to bottom, #c0d3d1, #a0beba);<br>
+							text-decoration: none;<br>
+							color: black;<br>
+						}<br>
+						
+						.button:focus {<br>
+							outline:0;<br>
+						}<br>
+					</div>
+				</div><br>
 			</div>
 			
-			<br>
-		  </div>
+			<div class="grouping">
+				<a name="Image"><h1>Image</h1></a>
+				<div class="images span_2_of_6">
+					<img src="coffee-983955_640.jpg" alt="coffee"><br>
+					
+					<div class="container">
+						<p>Latte</p>
+					</div>
+				</div><br>
+		
+				<div class="thumbnail span_1_of_6">
+					<img class="img2" src="coffee-983955_640.jpg" alt="coffee">
+				</div>
+				
+				<p>*explain the images here*</p>
+			</div>
+         
+			<div class="grouping">
+				<a name="List"><h1>List</h1></a>
+				<p>The lists elements are used for mainly for the navigation for this style guide and future web site. In the final product the design team desided there would be no use of a literal list is the use of the site. That being said the both of the navigations used in this style guide make use of the HTML list elements. If you would like to see how they are used, please look at <a href="#NavigationMenu">Navigation Menu</a> to see how to use!</p>
+			</div>
+         
+			<div class="grouping">
+				<a name="Table"><h1>Table</h1></a>
+				<p>To keep things easy to look at there is not much styling to the table. The main thing that is styled in the table is the bottom border of the rows for separation and the aligning of the text. Otherwise the table is quite simple. When each row of the table is hovered over, the row is highlighted a lighter color value of the teal that is used throughout the site. This is to help the user focus on a specific row and for aesthetic look.</p>
+
+				<table>
+					<tr>
+						<th>Drink</th>
+						<th>Calories</th>
+						<th>Price</th>
+					</tr>
+					
+					<tr>
+						<td>Coffee</td>
+						<td>*example of calories*</td>
+						<td>$1.00</td>
+					</tr>
+					
+					<tr>
+						<td>Donut</td>
+						<td>*example of calories*</td>
+						<td>$1.50</td>
+					</tr>
+					
+					<tr>
+						<td>*example drink*</td>
+						<td>*example of calories*</td>
+						<td>$1.00</td>
+					</tr>
+					
+					<tr>
+						<td>*example drink*</td>
+						<td>*example of calories*</td>
+						<td>$2.50</td>
+					</tr>
+				</table><br>
+            
+				<div class="grouping span_2_of_6">
+					<p>HTML</p>
+					<code class="code1">
+						&lt;table&gt;<br>
+						&lt;tr&gt;<br>
+						&lt;th&gt;Drink&lt;/th&gt;<br>
+						&lt;th&gt;Calories&lt;/th&gt;<br>
+						&lt;th&gt;Price&lt;/th&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+						&lt;td&gt;Coffee&lt;/td&gt;<br>
+						&lt;td&gt;*example of calories*&lt;/td&gt;<br>
+						&lt;td&gt;$1.00&lt;/td&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+						&lt;/table&gt;<br>
+					</code>
+				</div>
+			
+				<div class="grouping span_2_of_6">
+					<p>CSS</p>
+					<code class="code1">
+						table {<br>
+							border-collapse: collapse;<br>
+							width: 100%;<br>
+						}<br>
+						
+						th, td {<br>
+							padding: 8px;<br>
+							text-align: left;<br>
+							border-bottom: 1px solid #885259;<br>
+							color: #91725d<br>
+						}<br>
+						
+						tr:hover{<br>
+							background-color: #c0d3d1;<br>
+						}<br>
+					</code>
+				</div>
+			</div>
+		 
+		 
          
          <div class="grouping">
-            <a name="List"><h1>List</h1></a>
-            <p>The lists elements are used for mainly navigation. The color of the list is our color for the navigation and table of contents #91725d. The text color is white to contrast against the brown background color and when the user hovers over the list our teal highlighting color is used #528881. It uses the Quicksand font, with the items floating to the left. Other than that this is just a simple list with simple styles.</p>
+            <a name="NavigationMenu"><h1>Navigation Menu</h1></a>
+			<p>The navigation for this style guide makes use of the unordered list elements, and its CSS styles. The color of our navigation and table of contents is #91725d. The text color is white to contrast against the brown background color and when the user hovers over the list our teal highlighting color is used #528881. It uses the Quicksand font, with the items floating to the left. Other than that this is just a simple list with simple styles.</p>
             
             <div class="topnav span_3_of_6">
                <ul>
@@ -121,10 +203,9 @@
                   <li><a href="#">UI Components</a></li>
                </ul>
             </div>
-            
             <br>
-            
             <div class="grouping span_2_of_6">
+				<p>HTML</p>
 				<code class="code1">
 				   &lt;div&nbsp;class=&quot;topnav&nbsp;span_3_of_6&quot;&gt;<br>
 				   &nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
@@ -136,6 +217,7 @@
 				</code>
 			 </div>
            <div class="grouping span_2_of_6">
+				<p>CSS</p>
 				<code class="code2">
 				   .topnav ul {<br>
 					  list-style-type: none;<br>
@@ -161,63 +243,7 @@
 				   }<br>
 				</code>
 			 </div>
-         </div>
-         
-         <div class="grouping">
-            <a name="Table"><h1>Table</h1></a>
-            <p>To keep things easy to look at there is not much styling to the table. The main thing that is styled in the table is the bottom border of the rows for separation and the aligning of the text. Otherwise the table is quite simple. When each row of the table is hovered over, the row is highlighted a lighter color value of the teal that is used throughout the site. This is to help the user focus on a specific row and for aesthetic look.</p>
-
-            <table>
-              <tr>
-                <th>Drink</th>
-                <th>Calories</th>
-                <th>Price</th>
-              </tr>
-              <tr>
-                <td>Coffee</td>
-                <td>*example of calories*</td>
-                <td>$1.00</td>
-              </tr>
-              <tr>
-                <td>Donut</td>
-                <td>*example of calories*</td>
-                <td>$1.50</td>
-              </tr>
-              <tr>
-                <td>*example drink*</td>
-                <td>*example of calories*</td>
-                <td>$1.00</td>
-              </tr>
-              <tr>
-                <td>*example drink*</td>
-                <td>*example of calories*</td>
-                <td>$2.50</td>
-              </tr>
-            </table>
-            
-            <br>
-            
-            <div class="grouping span_2_of_6">
-				<code class="code1">
-				   &lt;table&gt;<br>
-				   &lt;tr&gt;<br>
-					  &lt;th&gt;Drink&lt;/th&gt;<br>
-					  &lt;th&gt;Calories&lt;/th&gt;<br>
-					  &lt;th&gt;Price&lt;/th&gt;<br>
-				   &lt;/tr&gt;<br>
-				   &lt;tr&gt;<br>
-					  &lt;td&gt;Coffee&lt;/td&gt;<br>
-					  &lt;td&gt;*example of calories*&lt;/td&gt;<br>
-					  &lt;td&gt;$1.00&lt;/td&gt;<br>
-				&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-				&lt;/table&gt;<br>
-				</code>
-	   		</div>
-         </div>
-         
-         <div class="grouping">
-            <a name="NavigationMenu"><h1>Navigation Menu</h1></a>
-            <p>*explain the nav here*</p>
+			
          </div>
          
          <div class="grouping">
@@ -266,6 +292,11 @@
 				
 			 </div>
 		  </div>
+         
+         <div class="grouping">
+            <a name="BadgeLabel"><h1>Badge/Label</h1></a>
+            <p>*explain the badges and labels here*</p>
+         </div>
          
          <div class="grouping">
             <a name="NotificationsAlerts"><h1>Notifications/Alerts</h1></a>
