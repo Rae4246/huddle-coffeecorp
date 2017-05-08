@@ -23,37 +23,44 @@
       <div class="left span_1_of_6">
          <ul class="nav">
             <li><h5><a>Table of Contents</a></h5></li>
-            <li><a>Button</a></li>
-            <li><a>Image</a></li>
-            <li><a>List</a></li>
-            <li><a>Table</a></li>
-            <li><a>Navigation Menu</a></li>
-            <li><a>Breadcrumb Navigation</a></li>
-            <li><a>Form Elements</a></li>
-            <li class="indent"><a>Text input and Text area</a></li>
-            <li class="indent"><a>Checkbox</a></li>
-            <li class="indent"><a>Radio button</a></li>
-            <li class="indent"><a>Drop-down menu</a></li>
-            <li><a>Badge/Label</a></li>
-            <li><a>Notifications/Alerts</a></li>
+            <li><a href="#Buttons">Buttons</a></li>
+            <li><a href="#Image">Image</a></li>
+            <li><a href="#List">List</a></li>
+            <li><a href="#Table">Table</a></li>
+            <li><a href="#NavigationMenu">Navigation Menu</a></li>
+            <li><a href="#Breadcrumb">Breadcrumb Navigation</a></li>
+            <li><a href="#FormElements">Form Elements</a></li>
+            <li class="indent"><a href="#TextInputArea">Text input and Text area</a></li>
+            <li class="indent"><a href="#Checkbox">Checkbox</a></li>
+            <li class="indent"><a href="#RadioButton">Radio button</a></li>
+            <li class="indent"><a href="#DropDown">Drop-down menu</a></li>
+            <li><a href="#BadgeLabel">Badge/Label</a></li>
+            <li><a href="#NotificationsAlerts">Notifications/Alerts</a></li>
          </ul>
       </div>
       
       <div class="content span_4_of_6">
-         <h1> Buttons </h1>
-         <p>The buttons structure is using the html 5 button tag. We wanted the buttons to stand out from the rest of the content on the page so for the css we used the green color as a contrast to the other colors. There is a graidient style to the button to make it look a little nicer which uses different values and shade of the original color. spacificaly #a0beba and #528881. Another lighter graidient is used when the user hovers over the button to help indicate that they can interact with this element. #c0d3d1 and #a0beba. </p>
+        
+        <div>
+    		<p></p>
+    	</div>
+         <div class="grouping"><a name="Buttons"><h1> Buttons </h1></a>
+         <p>The buttons structure is using the html 5 button tag. We wanted the buttons to stand out from the rest of the content on the page so for the css we used the teal color as a contrast to the other colors. There is a graidient style to the button to make it look a little nicer which uses different values and shade of the original color. spacificaly #a0beba and #528881. Another lighter graidient is used when the user hovers over the button to help indicate that they can interact with this element. #c0d3d1 and #a0beba. </p>
          
          <button class="button span_1_of_6">
              Order your coffee now!
          </button>
-         
-         <div>
-            <code class="code">&lt;button class=&quot;button span_1_of_6&quot;&gt;<br>
+         <br>
+           
+           <div class="grouping span_2_of_6">
+            <div class="code1">&lt;button class=&quot;button span_1_of_6&quot;&gt;<br>
                &nbsp;&nbsp;&nbsp;This is a button!<br>
                &lt;/button&gt;<br> 
-            </code>
-            
-            <code class="code"> 
+            </div>
+			 </div>
+			
+           <div class="grouping span_2_of_6">
+            <div class="code2"> 
                .button {<br>
                   background: rgb(160,190,186);<br>
                   background-image: linear-gradient(to bottom, #a0beba, #528881);<br>
@@ -77,31 +84,36 @@
                .button:focus {<br>
                   outline:0;<br>
                }  <br>
-            </code>
+          </div>
+			 </div>
+           <br>
             
             <button class="button">
                This is a button!
             </button>
-         </div>
-      
-         <div>
-            <h1>Image</h1>
-            <div class="images">
-			<img src="coffee-983955_640.jpg" alt="coffee"><br>
-			<div class="container">
-				<p>Latte</p>
+			
+         
+		  </div>
+         <div class="grouping">
+            <a name="Image"><h1>Image</h1></a>
+            <div class="images span_2_of_6">
+				<img src="coffee-983955_640.jpg" alt="coffee"><br>
+				<div class="container">
+					<p>Latte</p>
+				</div>
 			</div>
-		</div>
-		<br>
-		<div class="thumbnail">
-			<img class="img2" src="coffee-983955_640.jpg" alt="coffee">
-		</div>
+			
+			<br>
+		
+			<div class="thumbnail span_1_of_6">
+				<img class="img2" src="coffee-983955_640.jpg" alt="coffee">
+			</div>
             <p>*explain the images here*</p>
          </div>
          
-         <div>
-            <h1>List</h1>
-            <p>The lists elements are used for mainly navigation. The color of the list is our color for the navigation and table of contents #91725d. The text color is white to contrast against the brown background color and when the user hovers over the list our green highlighting color is used #528881. Other than that this is just a simple list with simple styles.</p>
+         <div class="grouping">
+            <a name="List"><h1>List</h1></a>
+            <p>The lists elements are used for mainly navigation. The color of the list is our color for the navigation and table of contents #91725d. The text color is white to contrast against the brown background color and when the user hovers over the list our teal highlighting color is used #528881. It uses the Quicksand font, with the items floating to the left. Other than that this is just a simple list with simple styles.</p>
             
             <div class="topnav span_3_of_6">
                <ul>
@@ -111,44 +123,50 @@
                </ul>
             </div>
             
-            <code class="code">
-               &lt;div&nbsp;class=&quot;topnav&nbsp;span_3_of_6&quot;&gt;<br>
-               &nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Caffiene&nbsp;Corp.&lt;/a&gt;&lt;/li&gt;<br>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Style&nbsp;Guide&lt;/a&gt;&lt;/li&gt;<br>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;UI&nbsp;Components&lt;/a&gt;&lt;/li&gt;<br>
-               &nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-               &lt;/div&gt;<br>
-            </code>
+            <br>
             
-            <code class="code">
-               .topnav ul {<br>
-                  list-style-type: none;<br>
-                  margin: 0;<br>
-                  padding: 0;<br>
-                  overflow: hidden;<br>
-                  background-color: #91725d;<br>
-               }<br>
-               .topnav li {<br>
-                  float: left;<br>
-               }<br>
-               .topnav li a {<br>
-                  display: block;<br>
-                  color: white;<br>
-                  text-align: center;<br>
-                  padding: 14px 16px;<br>
-                  font-family: 'Quicksand', sans-serif;<br>
-                  text-decoration: none;<br>
-               }<br>
-               .topnav li a:hover {<br>
-                  background-color: #528881;<br>
-               }<br>
-            </code>
+            <div class="grouping span_2_of_6">
+				<code class="code1">
+				   &lt;div&nbsp;class=&quot;topnav&nbsp;span_3_of_6&quot;&gt;<br>
+				   &nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+				   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Caffiene&nbsp;Corp.&lt;/a&gt;&lt;/li&gt;<br>
+				   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Style&nbsp;Guide&lt;/a&gt;&lt;/li&gt;<br>
+				   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;UI&nbsp;Components&lt;/a&gt;&lt;/li&gt;<br>
+				   &nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+				   &lt;/div&gt;<br>
+				</code>
+			 </div>
+           <div class="grouping span_2_of_6">
+				<code class="code2">
+				   .topnav ul {<br>
+					  list-style-type: none;<br>
+					  margin: 0;<br>
+					  padding: 0;<br>
+					  overflow: hidden;<br>
+					  background-color: #91725d;<br>
+					  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);<br>
+				   }<br>
+				   .topnav li {<br>
+					  float: left;<br>
+				   }<br>
+				   .topnav li a {<br>
+					  display: block;<br>
+					  color: white;<br>
+					  text-align: center;<br>
+					  padding: 14px 16px;<br>
+					  font-family: 'Quicksand', sans-serif;<br>
+					  text-decoration: none;<br>
+				   }<br>
+				   .topnav li a:hover {<br>
+					  background-color: #528881;<br>
+				   }<br>
+				</code>
+			 </div>
          </div>
          
-         <div>
-            <h1>Table</h1>
-            <p>To keep things easy to look at there is not much styling to the table. The main thing that is styled in the table is the bottom border of the rows for separation and the aligning of the text. Otherwise the table is quite simple. When each row of the table is hovered over, the row is highlighted a lighter color value of the green that is used throughout the site. This is to help the user focus on a specific row and for aesthetic look.</p>
+         <div class="grouping">
+            <a name="Table"><h1>Table</h1></a>
+            <p>To keep things easy to look at there is not much styling to the table. The main thing that is styled in the table is the bottom border of the rows for separation and the aligning of the text. Otherwise the table is quite simple. When each row of the table is hovered over, the row is highlighted a lighter color value of the teal that is used throughout the site. This is to help the user focus on a specific row and for aesthetic look.</p>
 
             <table>
               <tr>
@@ -178,71 +196,85 @@
               </tr>
             </table>
             
-            <code class="code">
-               &lt;table&gt;<br>
-               &lt;tr&gt;<br>
-                  &lt;th&gt;Drink&lt;/th&gt;<br>
-                  &lt;th&gt;Calories&lt;/th&gt;<br>
-                  &lt;th&gt;Price&lt;/th&gt;<br>
-               &lt;/tr&gt;<br>
-               &lt;tr&gt;<br>
-                  &lt;td&gt;Coffee&lt;/td&gt;<br>
-                  &lt;td&gt;*example of calories*&lt;/td&gt;<br>
-                  &lt;td&gt;$1.00&lt;/td&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-            &lt;/table&gt;<br>
-            </code>
+            <br>
+            
+            <div class="grouping span_2_of_6">
+				<code class="code1">
+				   &lt;table&gt;<br>
+				   &lt;tr&gt;<br>
+					  &lt;th&gt;Drink&lt;/th&gt;<br>
+					  &lt;th&gt;Calories&lt;/th&gt;<br>
+					  &lt;th&gt;Price&lt;/th&gt;<br>
+				   &lt;/tr&gt;<br>
+				   &lt;tr&gt;<br>
+					  &lt;td&gt;Coffee&lt;/td&gt;<br>
+					  &lt;td&gt;*example of calories*&lt;/td&gt;<br>
+					  &lt;td&gt;$1.00&lt;/td&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+				&lt;/table&gt;<br>
+				</code>
+	   		</div>
          </div>
          
-         <div>
-            <h1>Navigation Menu</h1>
+         <div class="grouping">
+            <a name="NavigationMenu"><h1>Navigation Menu</h1></a>
             <p>*explain the nav here*</p>
          </div>
          
-         <div>
-            <h1>Breadcrumb Navigation</h1>
+         <div class="grouping">
+            <a name="Breadcrumb"><h1>Breadcrumb Navigation</h1></a>
             <p>*explain the breadcrumb nav here*</p>
          </div>
          
-         <div>
-            <h1>Form Elements</h1>
+         <div class="grouping">
+            <a name="FormElements"><h1>Form Elements</h1></a>
             <p>*explain the form elements here*</p>
             
-            <h3>Text input and text area</h3>
-            <p>*explain the form elements here*</p>
-            
-            <h3>Checkbox</h3>
-            <form class="checkboxes" action="">
-				<input type="checkbox" name="" value="">Check
-			</form>
-            <p>*explain the form elements here*</p>
-            
-            <h3>Radio button</h3>
-            <form class="radiobuttons" action="">
-				<input type="radio" name="size" value="small">Small<br>
-				<input type="radio" name="size" value="medium">Medium<br>
-				<input type="radio" name="size" value="large">Large
-			</form>
-            <p>*explain the form elements here*</p>
-            
-            <h3>Drop-down menu</h3>
-            <form class="select" action="">
-				<select name="options">
-					<option value="option1">Option 1</option>
-					<option value="option2">Option 2</option>
-					<option value="option3">Option 3</option>
-				</select>
-			</form>
-            <p>*explain the form elements here*</p>
-         </div>
+            <div class="formBox grouping indent span_2_of_6">
+				  <form>
+					<label>First Name</label>
+					<input type="text" placeholder="Your name..">
+
+					<label>Last Name</label>
+					<input type="text" placeholder="Your last name..">
+
+					<label>Country</label>
+					<select>
+					  <option value="australia">Australia</option>
+					  <option value="canada">Canada</option>
+					  <option value="usa">USA</option>
+					</select>
+					
+					<input type="checkbox" value="">Check <br>
+					<input type="radio" name="size" value="small">Small<br>
+					<input type="radio" name="size" value="medium">Medium<br>
+					<input type="radio" name="size" value="large">Large<br>
+					<input type="submit" value="Submit">
+				  </form>
+			</div>
+            <div class="indent">
+				<a name="TextInputArea"><h4>Text input and text area</h4></a>
+				<p>*explain the form elements here*</p>
+
+				<a name="Checkbox"><h4>Checkbox</h4></a>
+				<p>*explain the form elements here*</p>
+
+				<a name="RadioButton"><h4>Radio button</h4></a>
+				<p>*explain the form elements here*</p>
+
+				<a name="DropDown"><h4>Drop-down menu</h4></a>
+				<p>*explain the form elements here*</p>
+				
+			 </div>
+		  </div>
          
-         <div>
-            <h1>Badge/Label</h1>
+         <div class="grouping">
+            <a name="BadgeLabel"><h1>Badge/Label</h1></a>
             <p>*explain the badges and labels here*</p>
          </div>
          
-         <div>
-            <h1>Notifications/Alerts</h1>
+         <div class="grouping">
+            <a name="NotificationsAlerts"><h1>Notifications/Alerts</h1></a>
             <p>*explain the notifications and alerts here*</p>
          </div>
       </div>
