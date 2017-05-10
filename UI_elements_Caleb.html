@@ -94,6 +94,7 @@
 			
 			<div class="grouping">
 				<a name="Image"><h1>Image</h1></a>
+				<p>Dimensions: 640px X 405px<p>
 				<div class="images span_2_of_6">
 					<img src="coffee-983955_640.jpg" alt="coffee"><br>
 					
@@ -101,8 +102,57 @@
 						<p>Latte</p>
 					</div>
 				</div><br>
-				
-				<p>*explain the images here*</p>
+			<p>Dimensions: 450px X 285px<p>
+			<div class="image2 span_2_of_6">
+				<img src="coffee-983955_640.jpg" alt="coffee">
+			</div><br>
+			<div class="grouping span_2_of_6">
+					<p>HTML</p>
+					<div class="code1">	
+			&lt;p&gt;Dimensions:&nbsp;640px&nbsp;X&nbsp;405px&lt;p&gt;<br>
+				&lt;div&nbsp;class=&quot;images&nbsp;span_2_of_6&quot;&gt;<br>
+					&lt;img&nbsp;src=&quot;coffee-983955_640.jpg&quot;&nbsp;alt=&quot;coffee&quot;&gt;&lt;br&gt;
+					&lt;div&nbsp;class=&quot;container&quot;&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Latte&lt;/p&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;&lt;br&gt;<br>
+			&lt;p&gt;Dimensions:&nbsp;450px&nbsp;X&nbsp;285px&lt;p&gt;<br>
+			&lt;div&nbsp;id=&quot;image2&quot;&gt;<br>
+				&lt;img&nbsp;src=&quot;coffee-983955_640.jpg&quot;&nbsp;alt=&quot;coffee&quot;&gt;<br>
+			&lt;/div&gt;
+			</div></div>
+			<div class="grouping span_2_of_6">
+					<p>CSS</p>
+					<div class="code2">	
+			.images&nbsp;img&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%<br>
+			}<br>
+			.images&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;50%;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;white;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;4px&nbsp;8px&nbsp;0&nbsp;rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.2),&nbsp;0&nbsp;6px&nbsp;20px&nbsp;0&nbsp;rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.19);<br>
+			}<br>
+			.container&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;center;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px&nbsp;20px;<br>
+			}<br>
+
+			.images:hover&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;opacity:&nbsp;0.5;<br>
+			}
+			.images:active&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;opacity:&nbsp;1;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;12px&nbsp;16px&nbsp;0&nbsp;rgba(0,0,0,0.2),&nbsp;0&nbsp;16px&nbsp;36px&nbsp;0&nbsp;rgba(0,0,0,0.19);<br>
+			}<br>
+
+			#image2&nbsp;&nbsp;img{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;450px;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;285px;<br>
+			}
+			</div></div>
+				<p>Image one should be used so that it links the product's detailed information from a different page.<br>
+				Image two should be used to display photos that are not linked to anything else. There is no visual pliancy for image two; users should only be able to look at it.
+				</p>
 			</div>
          
 			<div class="grouping">
@@ -244,7 +294,63 @@
          
          <div class="grouping">
             <a name="Breadcrumb"><h1>Breadcrumb Navigation</h1></a>
-            <p>*explain the breadcrumb nav here*</p>
+            <div id="breadcrumbs">
+				<ul class="crumbsList">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Cold Beverages</a></li>
+					<li>Iced Mocha</li>
+				</ul>
+			</div>
+			<div class="grouping span_2_of_6">
+			<p>HTML</p>
+			<code class="code1">
+			&lt;div&nbsp;id=&quot;breadcrumbs&quot;&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&nbsp;class=&quot;crumbsList&quot;&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Cold&nbsp;Beverages&lt;/a&gt;&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Iced&nbsp;Mocha&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+			&lt;/div&gt;<br>
+			</code></div>
+			<div class="grouping span_2_of_6">
+			<p>CSS</p>
+			<code class="code2">
+			#breadcrumbs&nbsp;ul.crumbsList&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;14px&nbsp;14px;<br>
+				font-size:&nbsp;12pt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;list-style:&nbsp;none;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			}<br>
+
+			#breadcrumbs&nbsp;ul.crumbsList&nbsp;li&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;inline;<br>
+			}<br>
+
+			#breadcrumbs&nbsp;ul.crumbsList&nbsp;li+li:before&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#b2868d;<br>
+				font-weight:&nbsp;bold;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;content:&nbsp;&quot;&gt;&quot;;<br>
+			}<br>
+
+			#breadcrumbs&nbsp;ul.crumbsList&nbsp;li&nbsp;a&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#885259;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;text-decoration:&nbsp;none;<br>
+			}<br>
+
+			#breadcrumbs&nbsp;ul.crumbsList&nbsp;li&nbsp;a:hover&nbsp;{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#528881;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;text-decoration:&nbsp;underline;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;font-weight:&nbsp;bold;<br>
+			}<br>
+			</code>
+			</div>
+			<p>The breadcrumb navigation should be used so that users are able to visualize how they got to a specific place on the website.
+			It provides the function to backtrack to previously visited webpage(s). Each label is linked(except the current webpage) and on hover the label is highlighted by
+			the color #528881 and is also underlined.
+			</p>
          </div>
          
          <div class="grouping">
@@ -349,8 +455,95 @@
 			 </div>
          
          <div class="grouping">
-            <a name="NotificationsAlerts"><h1>Notifications/Alerts</h1></a>
-            <p>*explain the notifications and alerts here*</p>
+            <a name="NotificationsAlerts"><h1>Alerts</h1></a>
+				<div class="formBox grouping indent span_2_of_6">
+				  <form>
+					<label>Name</label>
+					<input type="text" placeholder="Your name..">
+					<div id="caution">
+						<p>Name is required</p>
+					</div>
+					<label>Item</label>
+					<select>
+					  <option value="australia">Coffee</option>
+					  <option value="canada">Special Brews</option>
+					  <option value="usa">Bakery Items</option>
+					</select>
+					
+					<input type="checkbox" value="">Cold <br>
+					<input type="radio" name="size" value="small">Small<br>
+					<input type="radio" name="size" value="medium">Medium<br>
+					<input type="radio" name="size" value="large">Large<br>
+                    <div id="caution">
+						<p>Please select a size</p>
+					</div>
+					<label>Comments or Concerns</label>
+					<input type="text" placeholder="My experience was...."><br>
+                    
+                    <input type="submit" value="Submit">
+					<div id="success">
+					  <p>Order Complete!</P>
+					</div>
+				  </form>
+					
+			</div><br>
+			<div class="grouping span_2_of_6">
+            <p>HTML</p>
+                <code class="code1">
+				&lt;div&nbsp;class=&quot;formBox&nbsp;grouping&nbsp;indent&nbsp;span_2_of_6&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;form&gt;<br>
+									&lt;label&gt;Name&lt;/label&gt;<br>
+									&lt;input&nbsp;type=&quot;text&quot;&nbsp;placeholder=&quot;Your&nbsp;name..&quot;&gt;<br>
+									&lt;div&nbsp;id=&quot;caution&quot;&gt;<br>
+										&lt;p&gt;Name&nbsp;is&nbsp;required&lt;/p&gt;<br>
+									&lt;/div&gt;<br>
+									&lt;label&gt;Item&lt;/label&gt;<br>
+									&lt;select&gt;<br>
+									&nbsp;&nbsp;&lt;option&nbsp;value=&quot;australia&quot;&gt;Coffee&lt;/option&gt;<br>
+									&nbsp;&nbsp;&lt;option&nbsp;value=&quot;canada&quot;&gt;Special&nbsp;Brews&lt;/option&gt;<br>
+									&nbsp;&nbsp;&lt;option&nbsp;value=&quot;usa&quot;&gt;Bakery&nbsp;Items&lt;/option&gt;<br>
+									&lt;/select&gt;<br>
+									
+									&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;value=&quot;&quot;&gt;Cold&nbsp;&lt;br&gt;<br>
+									&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;size&quot;&nbsp;value=&quot;small&quot;&gt;Small&lt;br&gt;<br>
+									&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;size&quot;&nbsp;value=&quot;medium&quot;&gt;Medium&lt;br&gt;<br>
+									&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;size&quot;&nbsp;value=&quot;large&quot;&gt;Large&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id=&quot;caution&quot;&gt;<br>
+										&lt;p&gt;Please&nbsp;select&nbsp;a&nbsp;size&lt;/p&gt;<br>
+									&lt;/div&gt;<br>
+									&lt;label&gt;Comments&nbsp;or&nbsp;Concerns&lt;/label&gt;<br>
+									&lt;input&nbsp;type=&quot;text&quot;&nbsp;placeholder=&quot;My&nbsp;experience&nbsp;was....&quot;&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id=&quot;success&quot;&gt;<br>
+									&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;value=&quot;&quot;&gt;Confirm&nbsp;order<br>
+									&lt;/div&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type=&quot;submit&quot;&nbsp;value=&quot;Submit&quot;&gt;<br>
+								&nbsp;&nbsp;&lt;/form&gt;<br>
+									
+							&lt;/div&gt;  
+                </code>
+            </div>
+			<div class="grouping span_2_of_6">
+            <p>CSS</p>
+                <code class="code2">
+                    #caution&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;1px&nbsp;1px;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;8px&nbsp;0;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;#FFAAAA;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;4px;<br>
+					}<br>
+
+					#success&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;30px;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;8px&nbsp;0;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;#C7E9C0;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;4px;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#4d201d;<br>
+					}
+                </code>
+            </div>
+            <p>Alerts provide feedback based on what kind of information is required. For example, a user can not submit an order until a name and size is provided
+			Alerts will pop up under each form element that requires user action. Green alerts are used to confirm submission success. Alerts are mainly used in forms such as login.
+			</p>
          </div>
       </div>
 	</body>				 
